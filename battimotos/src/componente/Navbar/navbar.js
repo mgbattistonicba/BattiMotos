@@ -2,10 +2,10 @@ import './navbar.css'
 
 const Navbar =() => {
     return(
-        <nav className= "navegacion">
+        <nav>
 
-            <h1>Venta de motos</h1>
-            <div>
+            <h1  className= "navegacion">Venta de motos</h1>
+            <div className= "button">
                 <button onClick={() =>{console.log('hice click')}}>Sport</button>
                 <button onClick={() =>{console.log('hice click')}}>Nacked</button>
                 <button onClick={() =>{console.log('hice click')}}>Tourning</button>
