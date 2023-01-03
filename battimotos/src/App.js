@@ -11,8 +11,7 @@ function App() {
     
     <div className='App'>
         <Navbar />
-        <button onClick={() => setShow(!show)}>show/hide</button>
-        { show && <ItemListContainer greeting='Bienvenido a BattiMotos'/> }
+         { show && <ItemListContainer greeting='Bienvenido a BattiMotos'/> }
         <ItemCount onAdd={(count) => console.log('se agregaron '+ count)} stock={10}/>
     </div>
   );
