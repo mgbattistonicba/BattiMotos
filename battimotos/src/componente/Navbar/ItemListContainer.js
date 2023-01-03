@@ -5,7 +5,6 @@ const ItemListContainer = () => {
     const [title, setTitle] = useState('Titulo')
     const [search, setSearch] = useState('celular')
 
-    
     useEffect(() => {
         console.log('llamada a api ' + search)
 

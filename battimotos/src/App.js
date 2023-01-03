@@ -1,14 +1,16 @@
 import './App.css';
 import { useState } from 'react'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Navbar from './components/Navbar/Navbar';
-import ItemCount from './components/ItemCount/ItemCount';
+import ItemListContainer from './componente//Navbar/ItemListContainer';
+import Navbar from './componente/Navbar/Navbar';
+import ItemCount from './componente//Navbar/ItemCount';
+
 
 function App() {
   const [show, setShow] = useState(false)
   return (
+    
     <div className='App'>
-        {<Navbar /> }
+        <Navbar />
         <button onClick={() => setShow(!show)}>show/hide</button>
         { show && <ItemListContainer greeting='Bienvenido a BattiMotos'/> }
         <ItemCount onAdd={(count) => console.log('se agregaron '+ count)} stock={10}/>

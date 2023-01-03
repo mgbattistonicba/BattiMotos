@@ -1,4 +1,4 @@
-/*import { useState } from 'react'
+import { useState } from 'react'
 
 const ItemCount = ({ onAdd, stock }) => {
     const [count, setCount]= useState(0)
@@ -8,7 +8,7 @@ const ItemCount = ({ onAdd, stock }) => {
     }
 
     const increment = () => {
-        for(let i = 0; i < 5; i++) {
+        for(let i = 0; i < 1; i++) {
             setCount(previo => {
                 console.log(previo)
                 console.log(count)
@@ -18,9 +18,7 @@ const ItemCount = ({ onAdd, stock }) => {
         return
     }
 
-    const reset = () => {
-        setCount(0)
-    }
+
 
     return (
         <div>
@@ -33,4 +31,4 @@ const ItemCount = ({ onAdd, stock }) => {
     )
 }
 
-export default ItemCount*/
+export default ItemCount
