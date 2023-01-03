@@ -22,7 +22,6 @@ const ItemCount = ({ onAdd, stock }) => {
 
     return (
         <div>
-            <h1>Contador</h1>
             <h2>{count}</h2>
             <button onClick={decrement}>-</button>
             <button onClick={increment}>+</button>

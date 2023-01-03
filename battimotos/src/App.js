@@ -3,6 +3,7 @@ import { useState } from 'react'
 import ItemListContainer from './componente//Navbar/ItemListContainer';
 import Navbar from './componente/Navbar/Navbar';
 import ItemCount from './componente//Navbar/ItemCount';
+import CartWidget from './componente/Navbar/CartWidget';
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     
     <div className='App'>
         <Navbar />
-         { show && <ItemListContainer greeting='Bienvenido a BattiMotos'/> }
+        <ItemListContainer greeting='Bienvenido a BattiMotos' />
+        <CartWidget />   
         <ItemCount onAdd={(count) => console.log('se agregaron '+ count)} stock={10}/>
     </div>
   );
