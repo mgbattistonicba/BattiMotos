@@ -1,10 +1,9 @@
-
-
 const CartWidget = () => {
     return (
-        <button type="button" className="btn btn-primary btn-lg" >
-            <img src="" alt="carrito"/>
-        </button>
+        <div style={{ backgroundColor: 'white', color: 'black'}}>
+            <img src='./img/carrito' alt='cart-widget'/>
+            0
+        </div>
     )
 }
 
