@@ -1,15 +1,18 @@
+import CartWidget from "./CartWidget"
 import './Navbar.css'
+
 
 const Navbar =() => {
     return(
         <nav>
 
-            <h1  className= "navegacion">Venta de motos</h1>
-            <div className= "button">
-                <button onClick={() =>{console.log('hice click')}}>Sport</button>
-                <button onClick={() =>{console.log('hice click')}}>Nacked</button>
-                <button onClick={() =>{console.log('hice click')}}>Tourning</button>
+            <h2  className= "navegacion">Venta de motos</h2>
+            <div style={{display: "flex"}}>
+                <button>Sport</button>
+                <button>Nacked</button>
+                <button>Tourning</button>
             </div>
+            <CartWidget />
         </nav>
     )
 
